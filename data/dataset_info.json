@@ -1,4 +1,14 @@
 {
+  "dsl": {
+    "file_name": "new_val_ori_zxsk_data_1112_val_fk.json",
+    "columns": {
+      "prompt": "prompt",
+      "query": "query",
+      "response": "response",
+      "system": "system",
+      "history": "history"
+    }
+  },
   "identity": {
     "file_name": "identity.json"
   },
