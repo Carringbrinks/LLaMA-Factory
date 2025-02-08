@@ -1,15 +1,16 @@
+CUDA_VISIBLE_DEVICES=6,7
 deepspeed --master_port=25678 --num_gpus=2 src/train.py \
-    --model_name_or_path /home/scb123/huggingface_weight/Qwen2.5-7b-Instruct \
+    --model_name_or_path /home/cbsu/huggingface/Qwen2-7B-Instruct \
     --stage sft \
     --do_train \
-    --finetuning_type lora \
+    --finetuning_type full \
     --deepspeed ./examples/deepspeed/ds_z3_offload_config.json \
-    --dataset dsl \
+    --dataset alpaca_zh_demo \
     --template qwen \
     --cutoff_len 4096 \
     --overwrite_cache \
     --preprocessing_num_workers 16 \
-    --output_dir ./train_weight_test \
+    --output_dir ./train_weight_debug \
     --logging_steps 1 \
     --save_steps 10 \
     --plot_loss true \
