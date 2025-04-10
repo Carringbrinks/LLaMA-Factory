@@ -1,4 +1,13 @@
 {
+  "r1_o1_sft_110k": {
+  "file_name": "/home/scb123/PyProject/LLaMA-Factory/data/distill_r1_110k_sft.json",
+  "columns": {
+    "prompt": "instruction",
+    "query": "input",
+    "response": "output",
+    "system": "system"
+  }
+  },
   "identity": {
     "file_name": "identity.json"
   },
