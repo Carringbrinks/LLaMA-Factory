@@ -51,13 +51,15 @@ def inverse_response(history: list):
             content = text.get("content", "")
 
             thought_match = re.search(r"<div class='thinking-container'>\n?(.*?)\n?</div>", content, re.DOTALL)
-            thought = thought_match.group(1).strip() if thought_match else ""
-            src_thought = f"<think>\n{thought}\n</think>"
-
             answer_match = re.search(r"</details>\s*(.*)", content, re.DOTALL)
-            answer = answer_match.group(1).strip() if answer_match else ""
-            # src_answer = f"<answer>\n{answer}\n</answer>"
 
+            if thought_match and answer_match:
+                thought = thought_match.group(1).strip() 
+                src_thought = f"<think>\n{thought}\n</think>"
+                answer = answer_match.group(1).strip() 
+            else:
+                src_thought = content
+                answer = ""
             history[i]["content"] = src_thought + answer
     
     return history
