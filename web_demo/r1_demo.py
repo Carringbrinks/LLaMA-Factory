@@ -123,8 +123,3 @@ if __name__ == "__main__":
     current_log_path = "./log_conversation_current.json"
      
     webui().launch(share=True)
-
-
-# CUDA_VISIBLE_DEVICES=0 vllm serve /home/scb123/HuggingfaceWeight/Qwen2.5-7B-Instruct --dtype float16 --max-model-len 4096 --port 8001
-# CUDA_VISIBLE_DEVICES=1 vllm serve /home/scb123/PyProject/LLaMA-Factory/qwen2.5_r1_o1_sft/checkpoint-3403 --dtype float16 --enable-chunked-prefill false --gpu-memo
-# ry-utilization 0.9 --max-model-len 8192
