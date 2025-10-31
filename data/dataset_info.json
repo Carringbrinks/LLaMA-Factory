@@ -1,4 +1,37 @@
 {
+  "synsql_8000": {
+    "file_name": "/home/scb123/PyProject/LLM_Data_Process/data_0605/train_100_20000_sft.jsonl",
+    "columns": {
+      "prompt": "",
+      "query": "input",
+      "response": "response",
+      "system": ""
+    }
+  },
+  "ts": {
+    "file_name": "/home/scb123/PyProject/LLaMA-Factory/data/AULF_train_data_2019-2020.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": ""
+    }
+  },
+  "1_14_pre": {
+    "file_name": "/home/scb123/PyProject/LLM_Data_Process/data_entity_extraction/1_14_pretrain.json",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "1_14_sft": {
+    "file_name": "/home/scb123/PyProject/LLM_Data_Process/data_entity_extraction/1_14_sft.json",
+    "columns": {
+      "prompt": "",
+      "query": "text",
+      "response": "response",
+      "system": "system"
+    }
+  },
   "identity": {
     "file_name": "identity.json"
   },
