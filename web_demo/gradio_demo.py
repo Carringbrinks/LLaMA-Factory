@@ -49,8 +49,8 @@ def bot(
     openai_api_key="",
     model_name="",
     max_tokens=2048,
-    temperature=0.95,
     top_p=0.7,
+    temperature=0.95,
     stream=False,
     r1=False,
 ):
@@ -169,7 +169,7 @@ def webui():
                     model_name,
                     max_new_tokens,
                     top_p,
-                    temperature,
+                    temperature, 
                     stream_output,
                     reasoning_mode,
                 ],
